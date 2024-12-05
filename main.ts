@@ -1,2 +1,1 @@
-
-let Arvid = "sej";
+tiles.setCurrentTilemap(tilemap`level`)
