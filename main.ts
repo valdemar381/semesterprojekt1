@@ -41,7 +41,7 @@ function SetFunctions () {
         . . . . . f f . . f f . . . . . 
         `, SpriteKind.Player)
     MainTileMap = tilemap`level`
-    MenuTileMap = tilemap`MenuTilemap`
+    MenuTileMap = tilemap`level4`
     tiles.setCurrentTilemap(MainTileMap)
     tileUtil.connectMaps(MenuTileMap, MainTileMap, MapConnectionKind.Door1)
     Stue = []
