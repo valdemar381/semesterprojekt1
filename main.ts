@@ -1,3 +1,21 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`vaskemaskine0`, function (sprite, location) {
+    if (GameIsAcive) {
+        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+    }
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 2), assets.tile`vaskemaskine0`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(4, 2), assets.tile`Num4`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(5, 2), assets.tile`Num5`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(6, 2), assets.tile`Num0`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 4), assets.tile`vaskemaskine`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(4, 4), assets.tile`Num8`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(5, 4), assets.tile`Num0`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(6, 4), assets.tile`Num0`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 6), assets.tile`vaskemaskine1`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(4, 6), assets.tile`Num1`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(5, 6), assets.tile`Num6`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(6, 6), assets.tile`Num4`)
+    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(7, 6), assets.tile`Num5`)
+})
 function DefineRooms (RoomToDefine: number[], XCol: number, XRow: number, StartCol: number, StartRow: number) {
     for (let index = 0; index <= XCol - 1; index++) {
         for (let index2 = 0; index2 <= XRow - 1; index2++) {
@@ -6,11 +24,6 @@ function DefineRooms (RoomToDefine: number[], XCol: number, XRow: number, StartC
         }
     }
 }
-scene.onOverlapTile(SpriteKind.Player, assets.tile`tørretumbler`, function (sprite, location) {
-    if (GameIsAcive) {
-        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
-    }
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`ovn`, function (sprite, location) {
     if (GameIsAcive) {
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
@@ -41,7 +54,7 @@ function SetFunctions () {
         . . . . . f f . . f f . . . . . 
         `, SpriteKind.Player)
     MainTileMap = tilemap`level`
-    MenuTileMap = tilemap`level4`
+    MenuTileMap = tilemap`level2`
     tiles.setCurrentTilemap(MainTileMap)
     tileUtil.connectMaps(MenuTileMap, MainTileMap, MapConnectionKind.Door1)
     Stue = []
@@ -61,8 +74,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`køleskab 2`, function (sprit
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     }
 })
-let MenuTileMap: tiles.TileMapData = null
 let MainTileMap: tiles.TileMapData = null
+let MenuTileMap: tiles.TileMapData = null
 let GameIsAcive = false
 let Gang: number[] = []
 let Vaskerum: number[] = []
