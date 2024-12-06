@@ -3,7 +3,6 @@ function DefineRooms (RoomToDefine: number[], XCol: number, XRow: number, StartC
         for (let index2 = 0; index2 <= XRow - 1; index2++) {
             RoomToDefine.push(StartCol + index)
             RoomToDefine.push(StartRow + index2)
-            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow + index2), sprites.castle.tileGrass1)
         }
     }
 }
