@@ -82,7 +82,6 @@
         "tilemapTile": true,
         "displayName": "myTile11"
     },
-
     "tile29": {
         "data": "hwQQABAAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZg==",
         "mimeType": "image/x-mkcd-f4",
@@ -285,7 +284,6 @@
         "data": "hwQQABAAAAD+//////////7d393d3f37/tEfERER/fv+0R8RERH9+y/RH/EfEf37L9EfERER/fv+0d/d3d39+//R///////7/tH///////v+0d/d3d39+4/RHxEREf37j9Ef8R8R/fv+0R8RERH9+/7RHxEREf37/t3f3d3d/fv+/////////w==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
-
         "displayName": "køkkenvask 1"
     },
     "tile48": {
@@ -299,7 +297,6 @@
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
         "displayName": "myTile1"
-
     },
     "level2": {
         "id": "level2",
@@ -350,7 +347,6 @@
             "myTiles.tile30",
             "myTiles.tile31",
             "myTiles.tile32",
-
             "myTiles.tile33",
             "myTiles.tile27",
             "myTiles.tile35",
@@ -367,7 +363,6 @@
             "myTiles.tile46",
             "myTiles.tile47",
             "myTiles.tile48"
-
         ],
         "displayName": "level"
     },
