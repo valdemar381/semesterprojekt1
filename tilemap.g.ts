@@ -29,16 +29,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile13 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile29 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile30 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile31 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile32 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile33 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile27 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile35 = image.ofBuffer(hex``);
@@ -46,14 +36,6 @@ namespace myTiles {
     export const tile36 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile37 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile19 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile25 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile23 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile24 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile22 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -80,12 +62,6 @@ namespace myTiles {
     export const tile38 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile39 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile41 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile42 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile43 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile49 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -126,6 +102,24 @@ namespace myTiles {
     export const tile63 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile59 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile60 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile61 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile43 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile19 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile25 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile24 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile23 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile42 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile41 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -168,7 +162,26 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16], TileScale.Sixteen);
             case "level":
-            case "level1":return tiles.createTilemap(hex`2800280001010101010101010101010101010101010101010101010101010101010101010101010101010101010102020202020202020202020202020202020202020202020201010101010101010101010101010101021b1d20272127290303030303030403030303030303030201010101010101010101010101010101021c1e261f251f281f030303030304030303030303030302010101010101010101010101010101010203030303030303030303030303040303030303030303020101010101010101010101010101010102030303030303030303030303030403030303030303030201010101010101010101010101010101020505050505050507050503030506050505030305050502010101010101010101010101010101010203030303030303040303030303042e2f3203030303030201010101010101010101010101010101020e030303030303040303030303042d3031030303030302010101010101010101010101010101010208090a030303030403030303030433353403030303030201010101010101010101010101010101020d0c0b030303030303030303030403030303030303030201010101010101010101010101010101020f030303030303030303030303042a2b2c03030303030201010101010101010101010101010101020303030303030304030303030304030303030303030302010101010101010101010101010101010217171717171717180303030303040303030303030303020101010101010101010101010101010102101223241615141a03030303030303030303030303030201010101010101010101010101010101021113222216161619030303030303030303030303030302010101010101010101010101010101010216161616161616190303030303040303030303030303020101010101010101010101010101010102161616161616161a030303030304030303030303030302010101010101010101010101010101010202020202020202020202030302020202020202020202020101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`, img`
+            case "level1":return tiles.createTilemap(hex`28002800010101010101010101010101010101010101010101010101010101010101010101010101010101010101020202020202020202020202020202020202020202020202010101010101010101010101010101010216181b221c22240303030303030403030303030303030201010101010101010101010101010101021719211a201a231a03030303030403030303030303030201010101010101010101010101010101020303030303030303030303030304030303030303030302010101010101010101010101010101010203030303030303030303030303040303030303030303020101010101010101010101010101010102050505050505050705050303050605050533330505050201010101010101010101010101010101020303030303030304030303030304292a2d03030303030201010101010101010101010101010101020e03030303030304030303030304282b2c030303030302010101010101010101010101010101010208090a03030303040303030303042e302f03030303030201010101010101010101010101010101020d0c0b030303033203030303030403030303030303030201010101010101010101010101010101020f030303030303320303030303042526270303030303020101010101010101010101010101010102030303030303030403030303030403030303030303030201010101010101010101010101010101020505050505050531030303030304030303030303030302010101010101010101010101010101010210121e1f03151404030303030332030303030303030302010101010101010101010101010101010211131d1d030303320303030303320303030303030303020101010101010101010101010101010102030303030303033203030303030403030303030303030201010101010101010101010101010101020303030303030304030303030304030303030303030302010101010101010101010101010101010202020202020202020202030302020202020202020202020101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`, img`
+........................................
+..222222222222222222222222..............
+..2.............2........2..............
+..2.............2........2..............
+..2.............2........2..............
+..2.............2........2..............
+..22222222222..22222..2222..............
+..2.......2.....2........2..............
+..2.......2.....2........2..............
+..2.......2.....2........2..............
+..2.............2........2..............
+..2.............2........2..............
+..2.......2.....2........2..............
+..222222222.....2........2..............
+..2.......2..............2..............
+..2......................2..............
+..2.............2........2..............
+..2.......2.....2........2..............
+..22222222222..22222222222..............
 ........................................
 ........................................
 ........................................
@@ -190,26 +203,7 @@ namespace myTiles {
 ........................................
 ........................................
 ........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-........................................
-`, [myTiles.transparency16,sprites.castle.tileGrass1,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile10,myTiles.tile11,myTiles.tile14,myTiles.tile15,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile22,myTiles.tile25,myTiles.tile19,myTiles.tile23,myTiles.tile24,myTiles.tile26,myTiles.tile28,myTiles.tile29,myTiles.tile30,myTiles.tile31,myTiles.tile32,myTiles.tile33,myTiles.tile27,myTiles.tile35,myTiles.tile36,myTiles.tile37,myTiles.tile34,myTiles.tile38,myTiles.tile39,myTiles.tile41,myTiles.tile42,myTiles.tile43,myTiles.tile44,myTiles.tile45,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile50,myTiles.tile52,myTiles.tile53,myTiles.tile51,myTiles.tile54,myTiles.tile55,myTiles.tile56,myTiles.tile57,myTiles.tile58,myTiles.tile59,myTiles.tile63,myTiles.tile64], TileScale.Sixteen);
+`, [myTiles.transparency16,sprites.castle.tileGrass1,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile10,myTiles.tile11,myTiles.tile14,myTiles.tile15,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile22,myTiles.tile25,myTiles.tile19,myTiles.tile23,myTiles.tile24,myTiles.tile26,myTiles.tile28,myTiles.tile27,myTiles.tile35,myTiles.tile36,myTiles.tile37,myTiles.tile34,myTiles.tile38,myTiles.tile39,myTiles.tile41,myTiles.tile42,myTiles.tile43,myTiles.tile44,myTiles.tile45,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile50,myTiles.tile52,myTiles.tile53,myTiles.tile51,myTiles.tile54,myTiles.tile55,myTiles.tile56,myTiles.tile57,myTiles.tile58,myTiles.tile59,myTiles.tile63,myTiles.tile64,myTiles.tile12,myTiles.tile60,myTiles.tile61], TileScale.Sixteen);
         }
         return null;
     })
@@ -243,16 +237,6 @@ namespace myTiles {
             case "tile12":return tile12;
             case "myTile11":
             case "tile13":return tile13;
-            case "myTile26":
-            case "tile29":return tile29;
-            case "myTile27":
-            case "tile30":return tile30;
-            case "myTile28":
-            case "tile31":return tile31;
-            case "myTile29":
-            case "tile32":return tile32;
-            case "Wall0":
-            case "tile33":return tile33;
             case "køleskab 1":
             case "tile27":return tile27;
             case "køleskab 2":
@@ -261,14 +245,6 @@ namespace myTiles {
             case "tile36":return tile36;
             case "ovn":
             case "tile37":return tile37;
-            case "toilet 1":
-            case "tile19":return tile19;
-            case "toilet 2":
-            case "tile25":return tile25;
-            case "håndvask 1":
-            case "tile23":return tile23;
-            case "håndvask 2":
-            case "tile24":return tile24;
             case "sengelampe slukket":
             case "tile22":return tile22;
             case "sengelampe":
@@ -295,12 +271,6 @@ namespace myTiles {
             case "tile38":return tile38;
             case "Stor overskab":
             case "tile39":return tile39;
-            case "Underskab toilet":
-            case "tile41":return tile41;
-            case "myTile12":
-            case "tile42":return tile42;
-            case "føntørrer":
-            case "tile43":return tile43;
             case "myTile14":
             case "tile49":return tile49;
             case "Opvaskemaskine":
@@ -341,6 +311,24 @@ namespace myTiles {
             case "tile63":return tile63;
             case "tv møbel 1 controller":
             case "tile59":return tile59;
+            case "dør 1":
+            case "tile60":return tile60;
+            case "dør 2":
+            case "tile61":return tile61;
+            case "føntørrer":
+            case "tile43":return tile43;
+            case "toilet 1":
+            case "tile19":return tile19;
+            case "toilet 2":
+            case "tile25":return tile25;
+            case "håndvask 2":
+            case "tile24":return tile24;
+            case "håndvask 1":
+            case "tile23":return tile23;
+            case "myTile12":
+            case "tile42":return tile42;
+            case "Underskab toilet":
+            case "tile41":return tile41;
         }
         return null;
     })
