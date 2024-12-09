@@ -1,20 +1,32 @@
+namespace SpriteKind {
+    export const Utility = SpriteKind.create()
+}
 scene.onOverlapTile(SpriteKind.Player, assets.tile`vaskemaskine0`, function (sprite, location) {
     if (GameIsAcive) {
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+        tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 2), assets.tile`vaskemaskine0`)
+        SetNumbers(450, 4, 2)
+        tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 4), assets.tile`vaskemaskine`)
+        SetNumbers(800, 4, 4)
+        tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 6), assets.tile`vaskemaskine1`)
+        SetNumbers(1640, 4, 6)
     }
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 2), assets.tile`vaskemaskine0`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(4, 2), assets.tile`Num4`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(5, 2), assets.tile`Num5`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(6, 2), assets.tile`Num0`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 4), assets.tile`vaskemaskine`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(4, 4), assets.tile`Num8`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(5, 4), assets.tile`Num0`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(6, 4), assets.tile`Num0`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 6), assets.tile`vaskemaskine1`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(4, 6), assets.tile`Num1`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(5, 6), assets.tile`Num6`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(6, 6), assets.tile`Num4`)
-    tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(7, 6), assets.tile`Num5`)
+})
+scene.onOverlapTile(SpriteKind.Utility, assets.tile`myTile13`, function (sprite, location) {
+    if (GameIsAcive) {
+        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tørretumbler0`, function (sprite, location) {
+    if (GameIsAcive) {
+        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+        tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 2), assets.tile`tørretumbler0`)
+        SetNumbers(400, 4, 2)
+        tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 4), assets.tile`tørretumbler`)
+        SetNumbers(750, 4, 4)
+        tileUtil.setTileAt(MenuTileMap, tiles.getTileLocation(2, 6), assets.tile`tørretumbler1`)
+        SetNumbers(1150, 4, 6)
+    }
 })
 function DefineRooms (RoomToDefine: number[], XCol: number, XRow: number, StartCol: number, StartRow: number) {
     for (let index = 0; index <= XCol - 1; index++) {
@@ -24,12 +36,30 @@ function DefineRooms (RoomToDefine: number[], XCol: number, XRow: number, StartC
         }
     }
 }
-scene.onOverlapTile(SpriteKind.Player, assets.tile`ovn`, function (sprite, location) {
-    if (GameIsAcive) {
-        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
-    }
+sprites.onDestroyed(SpriteKind.Utility, function (sprite) {
+    MainCharacter = sprites.create(img`
+        . . . . . . f f f f . . . . . . 
+        . . . . f f f 2 2 f f f . . . . 
+        . . . f f f 2 2 2 2 f f f . . . 
+        . . f f f e e e e e e f f f . . 
+        . . f f e 2 2 2 2 2 2 e e f . . 
+        . . f e 2 f f f f f f 2 e f . . 
+        . . f f f f e e e e f f f f . . 
+        . f f e f b f 4 4 f b f e f f . 
+        . f e e 4 1 f d d f 1 4 e e f . 
+        . . f e e d d d d d d e e f . . 
+        . . . f e e 4 4 4 4 e e f . . . 
+        . . e 4 f 2 2 2 2 2 2 f 4 e . . 
+        . . 4 d f 2 2 2 2 2 2 f d 4 . . 
+        . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
+        . . . . . f f f f f f . . . . . 
+        . . . . . f f . . f f . . . . . 
+        `, SpriteKind.Player)
+    controller.moveSprite(MainCharacter, 100, 100)
+    tiles.placeOnTile(MainCharacter, tiles.getTileLocation(13, 15))
+    scene.cameraFollowSprite(MainCharacter)
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`vaskemaskine`, function (sprite, location) {
+scene.onOverlapTile(SpriteKind.Player, assets.tile`ovn`, function (sprite, location) {
     if (GameIsAcive) {
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     }
@@ -64,16 +94,51 @@ function SetFunctions () {
     Vaskerum = []
     Gang = []
 }
-scene.onOverlapTile(SpriteKind.Player, assets.tile`føntørrer`, function (sprite, location) {
-    if (GameIsAcive) {
-        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+function SetNumbers (num: number, StartCol: number, StartRow: number) {
+    let ArrayWithNumbersToSet: string[] = []
+    NumberToText = convertToText(num)
+    for (let index = 0; index <= NumberToText.length - 1; index++) {
+        ArrayWithNumbersToSet.push(NumberToText.charAt(index))
     }
+    for (let index = 0; index <= ArrayWithNumbersToSet.length - 1; index++) {
+        if (ArrayWithNumbersToSet[index] == "0") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num0`)
+        } else if (ArrayWithNumbersToSet[index] == "1") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num1`)
+        } else if (ArrayWithNumbersToSet[index] == "2") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num2`)
+        } else if (ArrayWithNumbersToSet[index] == "3") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num3`)
+        } else if (ArrayWithNumbersToSet[index] == "4") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num4`)
+        } else if (ArrayWithNumbersToSet[index] == "5") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num5`)
+        } else if (ArrayWithNumbersToSet[index] == "6") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num6`)
+        } else if (ArrayWithNumbersToSet[index] == "7") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num7`)
+        } else if (ArrayWithNumbersToSet[index] == "8") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num8`)
+        } else if (ArrayWithNumbersToSet[index] == "9") {
+            tiles.setTileAt(tiles.getTileLocation(StartCol + index, StartRow), assets.tile`Num9`)
+        }
+    }
+}
+scene.onOverlapTile(SpriteKind.Player, assets.tile`føntørrer`, function (sprite, location) {
+	
+})
+sprites.onDestroyed(SpriteKind.Player, function (sprite) {
+    ArrowSelector = sprites.create(assets.image`Arrow`, SpriteKind.Utility)
+    controller.moveSprite(ArrowSelector, 100, 100)
+    tiles.placeOnTile(ArrowSelector, tiles.getTileLocation(4, 4))
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`køleskab 2`, function (sprite, location) {
     if (GameIsAcive) {
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     }
 })
+let ArrowSelector: Sprite = null
+let NumberToText = ""
 let MainTileMap: tiles.TileMapData = null
 let MenuTileMap: tiles.TileMapData = null
 let GameIsAcive = false
@@ -95,3 +160,10 @@ DefineRooms(Køkken, 13, 4, 3, 2)
 DefineRooms(Vaskerum, 8, 4, 17, 2)
 DefineRooms(Gang, 5, 11, 11, 7)
 GameIsAcive = true
+game.onUpdateInterval(200, function () {
+    if (tiles.tileAtLocationEquals(tiles.getTileLocation(9, 7), assets.tile`myTile13`)) {
+        sprites.destroy(MainCharacter)
+    } else if (tiles.tileAtLocationEquals(tiles.getTileLocation(0, 0), sprites.castle.tileGrass1)) {
+        sprites.destroy(ArrowSelector)
+    }
+})
