@@ -46,6 +46,31 @@ sprites.onDestroyed(SpriteKind.Utility, function (sprite) {
 function Starskærm () {
     Moderjord = sprites.create(assets.image`ModerJord`, SpriteKind.Moderjord)
     scene.setBackgroundImage(assets.image`Backgrund`)
+    tiles.placeOnTile(Moderjord, tiles.getTileLocation(120, 70))
+    game.showLongText("Velkommen.", DialogLayout.Bottom)
+    game.showLongText("Mit navn er Moderjord.", DialogLayout.Bottom)
+    game.showLongText("Det mit job at forklare dig din mission.", DialogLayout.Bottom)
+    sprites.destroy(Moderjord, effects.disintegrate, 1000)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund2`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund3`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund4`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund5`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund6`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund7`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund8`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund9`)
+    pause(500)
+    scene.setBackgroundImage(assets.image`Backgrund10`)
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`ovn`, function (sprite, location) {
     if (GameIsAcive) {
@@ -121,6 +146,7 @@ let Badeværelse: number[] = []
 let Soveværelse: number[] = []
 let Stue: number[] = []
 let MainCharacter: Sprite = null
+Starskærm()
 SetFunctions()
 controller.moveSprite(MainCharacter, 100, 100)
 tiles.placeOnTile(MainCharacter, tiles.getTileLocation(13, 20))
