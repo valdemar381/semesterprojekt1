@@ -3,6 +3,9 @@ namespace SpriteKind {
 }
 
 
+
+
+
 function SetUr(Time:number){
     tiles.setTileAt(tiles.getTileLocation(7, 1), assets.tile`BigClockTL`)
     tiles.setTileAt(tiles.getTileLocation(8, 1), assets.tile`BigClockTM`)
@@ -14,7 +17,60 @@ function SetUr(Time:number){
     tiles.setTileAt(tiles.getTileLocation(8, 3), assets.tile`BigClockBM`)
     tiles.setTileAt(tiles.getTileLocation(9, 3), assets.tile`BigClockBR`)
     if(Time == 1){
-        tiles.setTileAt(tiles.getTileLocation(7, 1), assets.tile`BigClockBR`)
+        tiles.setTileAt(tiles.getTileLocation(8, 1), assets.tile`BigClockTM1`)
+        tiles.setTileAt(tiles.getTileLocation(9, 1), assets.tile`BigClockTR_KL1`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM1`)
+    } 
+    else if (Time == 2){
+        tiles.setTileAt(tiles.getTileLocation(9, 2), assets.tile`BigClockMR2`)
+        tiles.setTileAt(tiles.getTileLocation(9, 1), assets.tile`BigClockTR_KL2`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM2`)
+    }
+    else if (Time == 3) {
+        tiles.setTileAt(tiles.getTileLocation(9, 2), assets.tile`BigClockMR3`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM3`)
+    }
+    else if (Time == 4) {
+        tiles.setTileAt(tiles.getTileLocation(9, 2), assets.tile`BigClockMR4`)
+        tiles.setTileAt(tiles.getTileLocation(9, 3), assets.tile`BigClockBR_KL4`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM4`)
+    }
+    else if (Time == 5) {
+        tiles.setTileAt(tiles.getTileLocation(8, 3), assets.tile`BigClockBM5`)
+        tiles.setTileAt(tiles.getTileLocation(9, 3), assets.tile`BigClockBR_KL5`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM5`)
+    } 
+    else if (Time == 6) {
+        tiles.setTileAt(tiles.getTileLocation(8, 3), assets.tile`BigClockBM6`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM6`)
+    }
+    else if (Time == 7) {
+        tiles.setTileAt(tiles.getTileLocation(8, 3), assets.tile`BigClockBM7`)
+        tiles.setTileAt(tiles.getTileLocation(7, 3), assets.tile`BigClockBL_KL7`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM7`)
+    }
+    else if (Time == 8) {
+        tiles.setTileAt(tiles.getTileLocation(7, 2), assets.tile`BigClockML8`)
+        tiles.setTileAt(tiles.getTileLocation(7, 3), assets.tile`BigClockBL_KL8`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM8`)
+    }
+    else if (Time == 9) {
+        tiles.setTileAt(tiles.getTileLocation(7, 2), assets.tile`BigClockML9`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM9`)
+    } 
+    else if (Time == 10) {
+        tiles.setTileAt(tiles.getTileLocation(7, 2), assets.tile`BigClockML10`)
+        tiles.setTileAt(tiles.getTileLocation(7, 1), assets.tile`BigClockTL_KL10`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM10`)
+    }
+    else if (Time == 11) {
+        tiles.setTileAt(tiles.getTileLocation(8, 1), assets.tile`BigClockTM11`)
+        tiles.setTileAt(tiles.getTileLocation(7, 1), assets.tile`BigClockTL_KL11`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM11`)
+    }
+    else if (Time == 12) {
+        tiles.setTileAt(tiles.getTileLocation(8, 1), assets.tile`BigClockTM12`)
+        tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM12`)
     }
 }
 
@@ -92,7 +148,7 @@ function SetImage (WhatImage: string, Col: number, Row: number){
 
 
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function() {
-    if (CurrentTileMap = "Main"){
+    if (CurrentTileMap == "Main"){
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
         SetNumbers(CurrentDay, 1, 1)
         SetNumbers(CO2, 1, 2)
@@ -102,7 +158,8 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function() {
         SetImage("Money", 0, 3)
         SetUr(Time)
         CurrentTileMap = "Menu"
-    }else{
+    } 
+    else if (CurrentTileMap == "Menu") {
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
         CurrentTileMap = "Main"
     }
@@ -217,4 +274,23 @@ game.onUpdateInterval(200, function () {
     } else if (tiles.tileAtLocationEquals(tiles.getTileLocation(0, 0), sprites.castle.tileGrass1)) {
         sprites.destroy(ArrowSelector)
     }
+})
+
+game.onUpdateInterval(5000, function() {
+    CurrentTime += 1
+    if (CurrentTime == 25) {
+        CurrentTime = 1
+        CurrentDay += 1
+    }
+    if (CurrentTime > 12) {
+        Time = CurrentTime - 12
+    } else {
+        Time = CurrentTime
+    }
+    if (CurrentTileMap == "Menu") {
+        SetUr(Time)
+        SetNumbers(CurrentDay,1,1)
+    }
+    
+    
 })
