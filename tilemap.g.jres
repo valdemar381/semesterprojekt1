@@ -640,18 +640,6 @@
         "tilemapTile": true,
         "displayName": "BigClockTR_KL2"
     },
-    "tile122": {
-        "data": "hwQQABAAAAD//////////5+ZmZmZmZn5n5mZmZmZmfmfmVWZmZmZ+Z9ZmZWZmZX5n5WZWZmZWflfVVVVVVVV9Z+VmVmZmVn5X1VVVVVVVfWflZlZmZlZ+Z+VmVmZmZX5n1mZmZVZmfmfmZmZWZWZ+Z+ZmZmZmZn5n5mZmZmZmfn//////////w==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "myTile14"
-    },
-    "tile121": {
-        "data": "hwQQABAAAAD//////////5+ZGRERkZn5n5mRmZkZmfmfmZGZmRmZ+Z+ZGZmZkZn5n5mZmZmZmfmfmRkREZGZ+Z+ZkZmZGZn5n5mRmZkZmfmfmRkREZGZ+Z+ZmZmZmZn5n5mZGZkZEfmfmZmRmZEZ+Z+ZmZGZkRn5n5mZGRGZGfn//////////w==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "myTile1"
-    },
     "tile65": {
         "data": "hwQQABAAAAB3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3cRd3d3ERF3F3d3dxd3d3EXd3d3F3d3cRd3d3dxd3dxF3d3d3F3d3EXd3cXd3d3cXdxdxd3d3dxdxcRcXd3d3F3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3dw==",
         "mimeType": "image/x-mkcd-f4",
@@ -859,17 +847,23 @@
         "tilemapTile": true,
         "displayName": "tv møbel 1 controller"
     },
+    "tile121": {
+        "data": "hwQQABAAAAD//////////5+ZGRERkZn5n5mRmZkZmfmfmZGZmRmZ+Z+ZGZmZkZn5n5mZmZmZmfmfmRkREZGZ+Z+ZkZmZGZn5n5mRmZkZmfmfmRkREZGZ+Z+ZmZmZmZn5n5mZGZkZEfmfmZmRmZEZ+Z+ZmZGZkRn5n5mZGRGZGfn//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "CO2"
+    },
+    "tile122": {
+        "data": "hwQQABAAAAD//////////5+ZmZmZmZn5n5mZmZmZmfmfmVWZmZmZ+Z9ZmZWZmZX5n5WZWZmZWflfVVVVVVVV9Z+VmVmZmVn5X1VVVVVVVfWflZlZmZlZ+Z+VmVmZmZX5n1mZmZVZmfmfmZmZWZWZ+Z+ZmZmZmZn5n5mZmZmZmfn//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "Money"
+    },
     "tile142": {
         "data": "hwQQABAAAAD//////////5/p7u7u7pn5n97d/93d7vnv/d3d3f3d/u/d3d3d3d3+793d3d3d3f7v3d3d3d3d/u8vIiLf3f3+7y8iIt/d/f7v3d3d3d3d/u/d3d3d3d3+793d3d3d3f7v3d/d3d3f/p/u3f3f3e35n5nu7u7unvn//////////w==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
-        "displayName": "TileUR"
-    },
-    "tile133": {
-        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-        "mimeType": "image/x-mkcd-f4",
-        "tilemapTile": true,
-        "displayName": "BlankSelector"
+        "displayName": "Ur"
     },
     "level2": {
         "id": "level2",

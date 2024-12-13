@@ -1569,7 +1569,7 @@ f444f4444444f444f.
 ...fffff.fffff....
 `;
             case "image20":
-            case "myImage0":return img`
+            case "BlankSelector":return img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 

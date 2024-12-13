@@ -215,10 +215,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile96 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile122 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile121 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile65 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile123 = image.ofBuffer(hex``);
@@ -289,9 +285,11 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile59 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile142 = image.ofBuffer(hex``);
+    export const tile121 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile133 = image.ofBuffer(hex``);
+    export const tile122 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile142 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -568,10 +566,6 @@ namespace myTiles {
             case "tile95":return tile95;
             case "BigClockTR_KL2":
             case "tile96":return tile96;
-            case "myTile14":
-            case "tile122":return tile122;
-            case "myTile1":
-            case "tile121":return tile121;
             case "Num2":
             case "tile65":return tile65;
             case "myTile15":
@@ -639,10 +633,12 @@ namespace myTiles {
             case "tile63":return tile63;
             case "tv møbel 1 controller":
             case "tile59":return tile59;
-            case "TileUR":
+            case "CO2":
+            case "tile121":return tile121;
+            case "Money":
+            case "tile122":return tile122;
+            case "Ur":
             case "tile142":return tile142;
-            case "BlankSelector":
-            case "tile133":return tile133;
         }
         return null;
     })

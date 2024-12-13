@@ -1,6 +1,30 @@
 namespace SpriteKind {
     export const Utility = SpriteKind.create()
 }
+
+
+function SetUr(Time:number){
+    tiles.setTileAt(tiles.getTileLocation(7, 1), assets.tile`BigClockTL`)
+    tiles.setTileAt(tiles.getTileLocation(8, 1), assets.tile`BigClockTM`)
+    tiles.setTileAt(tiles.getTileLocation(9, 1), assets.tile`BigClockTR`)
+    tiles.setTileAt(tiles.getTileLocation(7, 2), assets.tile`BigClockML`)
+    tiles.setTileAt(tiles.getTileLocation(8, 2), assets.tile`BigClockMM`)
+    tiles.setTileAt(tiles.getTileLocation(9, 2), assets.tile`BigClockMR`)
+    tiles.setTileAt(tiles.getTileLocation(7, 3), assets.tile`BigClockBL`)
+    tiles.setTileAt(tiles.getTileLocation(8, 3), assets.tile`BigClockBM`)
+    tiles.setTileAt(tiles.getTileLocation(9, 3), assets.tile`BigClockBR`)
+    if(Time == 1){
+        tiles.setTileAt(tiles.getTileLocation(7, 1), assets.tile`BigClockBR`)
+    }
+}
+
+
+
+
+
+
+
+
 scene.onOverlapTile(SpriteKind.Player, assets.tile`vaskemaskine0`, function (sprite, location) {
     if (GameIsAcive) {
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
@@ -38,8 +62,8 @@ function DefineRooms (RoomToDefine: number[], XCol: number, XRow: number, StartC
 }
 sprites.onDestroyed(SpriteKind.Utility, function (sprite) {
     MainCharacter = sprites.create(assets.image`MyGuyJim`, SpriteKind.Player)
-    controller.moveSprite(MainCharacter, 100, 100)
-    tiles.placeOnTile(MainCharacter, tiles.getTileLocation(13, 15))
+    controller.moveSprite(MainCharacter, 150, 150)
+    tiles.placeOnTile(MainCharacter, tiles.getTileLocation(MainCharacterPosCol, MainCharacterPosRow))
     scene.cameraFollowSprite(MainCharacter)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`ovn`, function (sprite, location) {
@@ -47,6 +71,52 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`ovn`, function (sprite, locat
         tileUtil.loadConnectedMap(MapConnectionKind.Door1)
     }
 })
+
+
+
+function SetImage (WhatImage: string, Col: number, Row: number){
+    if (WhatImage == "CO2"){
+        tiles.setTileAt(tiles.getTileLocation(Col, Row), assets.tile`CO2`)
+    } else if (WhatImage == "Money"){
+        tiles.setTileAt(tiles.getTileLocation(Col, Row), assets.tile`Money`)
+    } else if (WhatImage == "Ur") {
+        tiles.setTileAt(tiles.getTileLocation(Col, Row), assets.tile`Ur`)
+    }
+
+
+}
+
+
+
+
+
+
+controller.menu.onEvent(ControllerButtonEvent.Pressed, function() {
+    if (CurrentTileMap = "Main"){
+        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+        SetNumbers(CurrentDay, 1, 1)
+        SetNumbers(CO2, 1, 2)
+        SetNumbers(Money, 1, 3)
+        SetImage("Ur",0,1)
+        SetImage("CO2", 0, 2)
+        SetImage("Money", 0, 3)
+        SetUr(Time)
+        CurrentTileMap = "Menu"
+    }else{
+        tileUtil.loadConnectedMap(MapConnectionKind.Door1)
+        CurrentTileMap = "Main"
+    }
+    
+})
+
+
+
+
+
+
+
+
+
 function SetFunctions () {
     MainCharacter = sprites.create(assets.image`MyGuyJim`, SpriteKind.Player)
     MainTileMap = tilemap`level`
@@ -94,9 +164,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`føntørrer`, function (sprit
 	
 })
 sprites.onDestroyed(SpriteKind.Player, function (sprite) {
-    ArrowSelector = sprites.create(assets.image`Arrow`, SpriteKind.Utility)
-    controller.moveSprite(ArrowSelector, 100, 100)
-    tiles.placeOnTile(ArrowSelector, tiles.getTileLocation(4, 4))
+    if(CurrentTileMap != "Menu"){
+        ArrowSelector = sprites.create(assets.image`Arrow`, SpriteKind.Utility)
+        controller.moveSprite(ArrowSelector, 100, 100)
+        tiles.placeOnTile(ArrowSelector, tiles.getTileLocation(4, 4))
+    }else{
+        ArrowSelector = sprites.create(assets.image`BlankSelector`, SpriteKind.Utility)
+        tiles.placeOnTile(ArrowSelector, tiles.getTileLocation(4, 4))
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`køleskab 2`, function (sprite, location) {
     if (GameIsAcive) {
@@ -115,8 +190,16 @@ let Badeværelse: number[] = []
 let Soveværelse: number[] = []
 let Stue: number[] = []
 let MainCharacter: Sprite = null
+let Money = 10000
+let CO2 = 0
+let CurrentDay = 0
+let CurrentTileMap = "Main"
+let MainCharacterPosCol = 0
+let MainCharacterPosRow = 0
+let Time = 1
+let CurrentTime = 13
 SetFunctions()
-controller.moveSprite(MainCharacter, 100, 100)
+controller.moveSprite(MainCharacter, 150, 150)
 tiles.placeOnTile(MainCharacter, tiles.getTileLocation(13, 20))
 scene.cameraFollowSprite(MainCharacter)
 DefineRooms(Stue, 8, 11, 17, 7)
@@ -128,6 +211,8 @@ DefineRooms(Gang, 5, 11, 11, 7)
 GameIsAcive = true
 game.onUpdateInterval(200, function () {
     if (tiles.tileAtLocationEquals(tiles.getTileLocation(9, 7), assets.tile`myTile13`)) {
+        MainCharacterPosCol = tiles.locationXY(tiles.locationOfSprite(MainCharacter), tiles.XY.column)
+        MainCharacterPosRow = tiles.locationXY(tiles.locationOfSprite(MainCharacter), tiles.XY.row)
         sprites.destroy(MainCharacter)
     } else if (tiles.tileAtLocationEquals(tiles.getTileLocation(0, 0), sprites.castle.tileGrass1)) {
         sprites.destroy(ArrowSelector)
