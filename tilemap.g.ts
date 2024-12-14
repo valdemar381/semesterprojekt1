@@ -35,8 +35,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile36 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile37 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile22 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile21 = image.ofBuffer(hex``);
@@ -52,10 +50,6 @@ namespace myTiles {
     export const tile18 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile20 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile26 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile28 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile34 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -77,8 +71,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile61 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile43 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile19 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile25 = image.ofBuffer(hex``);
@@ -92,8 +84,6 @@ namespace myTiles {
     export const tile41 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile29 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile30 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile31 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -116,8 +106,6 @@ namespace myTiles {
     export const tile69 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile73 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile74 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile75 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -219,8 +207,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile123 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile124 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile126 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile125 = image.ofBuffer(hex``);
@@ -235,23 +221,45 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile131 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile132 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile134 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile136 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile138 = image.ofBuffer(hex``);
+    export const tile121 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile122 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile142 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile139 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile140 = image.ofBuffer(hex``);
+    export const tile138 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile135 = image.ofBuffer(hex``);
+    export const tile140 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile137 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
+    export const tile135 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
     export const tile141 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile133 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile146 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile147 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile148 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile149 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile150 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile132 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile124 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile151 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile52 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -259,11 +267,11 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile53 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile51 = image.ofBuffer(hex``);
+    export const tile144 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile55 = image.ofBuffer(hex``);
+    export const tile145 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile56 = image.ofBuffer(hex``);
+    export const tile143 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile57 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
@@ -271,25 +279,59 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile62 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile54 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile143 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile144 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
-    export const tile145 = image.ofBuffer(hex``);
-    //% fixedInstance jres blockIdentity=images._tile
     export const tile64 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile63 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile59 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile121 = image.ofBuffer(hex``);
+    export const tile30 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile122 = image.ofBuffer(hex``);
+    export const tile74 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
-    export const tile142 = image.ofBuffer(hex``);
+    export const tile153 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile152 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile43 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile154 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile51 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile55 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile54 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile156 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile158 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile56 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile155 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile159 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile160 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile161 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile26 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile28 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile163 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile162 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile157 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile37 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile164 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile165 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -305,31 +347,31 @@ namespace myTiles {
 . . . . . . . . . . 
 `, [myTiles.transparency16,myTiles.tile29,myTiles.tile73], TileScale.Sixteen);
             case "level":
-            case "level1":return tiles.createTilemap(hex`3c0028000101010101010101010101010101010147424242424242424242450101010101010101010101010132323232323232323232323232323232323232320101020202020202020202020202020202434343434343434343440101010101010101010101010132343434343434343434343434343434343434320101021315181f191f21190303030303024343434343434343434401010101010101010101010101333434343434343434343434343434343434343201010214161e171d17201703030303030243434343434343434348010101010101010101010101013334343434343434343434343434343434343432010102030303030303030303030303030243434343434343434301010101010101010101010101013334343434343434343434343434343434343432010102030303030303030303030303030243434343434343434301010101010101010101010101013234343434343434343434343434343434343432010102050505050505050605052f2f0502020202022f2f020202010101010101010101010101010132343434343434343434343434343434343434320101020303030303030304030303030304030303030303030302010101010101010101010101010132323232323232323232323232323232323232320101020d03030303030304030303030304030303030303030302010101010101010101010101010132343434343434343434343434343434343434320101020708090303030304030303030304030303030303030302010101010101010101010101010133343434343434343434343434343434343434320101020c0b0a030303032e030303030304030303030303030302010101010101010101010101010133343434343434343434343434343434343434320101020e0303030303032e03030303030403030303030303030201010101010101010101010101013232323232323232323232323232323232323232010102030303030303030403030303030403030303030303030201010101010101010101010101013234343434343434343434343434343434343432010102050505050505052d030303030304030303030303030302010101010101010101010101010133343434343434343434343434343434343434320101020f111b1c0303030403030303032e0303030303030303020101010101010101010101010101333434343434343434343434343434343434343201010210121a1a0303032e03030303032e03030303030303030201010101010101010101010101013232323232323232323232323232323232323232010102030303030303032e03030303030403030303030303030201010101010101010101010101013234343434343434343434343434343538383a32010102030303030303030403030303030403030303030303030201010101010101010101010101013234343434343434343434343434343639393b32010102030303030303030403030303030403030303030303030201010101010101010101010101013234343434343434343434343434343639393b320101020303030303030304030303030304494a4b03030303030201010101010101010101010101013334343434343434343434343434343639393b320101020303030303030302022f2f2f020222030303032a24250201010101010101010101010101013334343434343434343434343434343639393b320101020303030303030302403d3f3e400222030303032c27260201010101010101010101010101013234343434343434343434343434343739393c320101023003030303033102013d3f3e010223030303032b282902010101010101010101010101010132323232323232323232323232323232323232320101020202020202020202013d3f3e0102020202020202020202010101010101010101010101010132343434343434343434343434343434343434320101010101010101010101013d3f3e0101010101010101010144010101010101010101010101010132343434343434343434343434343434343434324242424242424242424242423d3f3e4242424242424242424246010101010101010101010101010132343434343434343434343434343434343434320101010101010101010101013d3f3e410101010101010101010101010101010101010101010101013334343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013334343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013234343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013232323232323232323232323232323232323232010101010101010101010101010101010101010101010101010101010101010101010101010101013234343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013334343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013334343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013234343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013232323232323232323232323232323232323232010101010101010101010101010101010101010101010101010101010101010101010101010101013234343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013234343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013334343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013334343434343434343434343434343434343432010101010101010101010101010101010101010101010101010101010101010101010101010101013232323232323232323232323232323232323232`, img`
+            case "level1":return tiles.createTilemap(hex`3c00280001010101010101010101010101010101423d3d3d3d3d3d3d3d3d40010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d01010202020202020202020202020202023e3e3e3e3e3e3e3e3e3f010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d0101021315171e181e20180303030303023e3e3e3e3e3e3e3e3e3f010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010102144b1d161c161f160303030303023e3e3e3e3e3e3e3e3e43010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d01010203030303030303030303030303023e3e3e3e3e3e3e3e3e01010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d01010203030303030303030303030303023e3e3e3e3e3e3e3e3e01010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d0101020505050505050506052a2a2a05020202022a2a2a02020201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010102030303030303030403030303030403030303030303030201010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d0101020d0303030303030403030303030403030303030303030201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010102070809030303032903030303030403030303030303030201010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d0101020c0b0a030303032903030303030403030303030303030201010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d0101020e0303030303032903030303030403030303030303030201010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d010102030303030303030403030303032903030303030303030201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010102050505050505052803030303032903030303030303030201010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d0101020f111a1b0303030403030303032903030303030303030201010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010102101219190303032903030303030403030303030303030201010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d010102030303030303032903030303030403032348240303030201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f303333352d0101020303030303030329030303030304030347494a0303030201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f313434362d010102030303030303030403030303030403032527260303030201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f313434362d010102030303030303030403030303030403030303030303030201010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f313434362d0101022b03030303032c02022a2a2a020246030303030303030201010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f313434362d01010202020202020202023b383a393b0245030303030303030201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f323434372d010101010101010101010101383a39010244212121212203030201010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d010101010101010101010101383a39010202020202020202020201010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101383a39010101010101010101013f01010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d3d3d3d3d3d3d3d3d3d3d3d3d383a393d3d3d3d3d3d3d3d3d3d4101010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101383a393c0101010101010101010101010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012e2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2d010101010101010101010101010101010101010101010101010101010101010101010101010101012d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d`, img`
 ................22222222222.............22222222222222222222
 ..222222222222222.........2.............2..................2
 ..22..22222.....2.........2................................2
 ..22..22222.....2.........2................................2
 ..2.............2..........................................2
 ..2.............2.......................2..................2
-..22222222222..222222..222..............2..................2
+..2222222222...22222...222..............2..................2
 ..2.......2.....2........2..............22222222222222222222
 ..2.......2.....2........2..............2..................2
-..2.......2.....2........2.................................2
+..2.............2........2.................................2
 ..2.............2........2.................................2
 ..2.............2........2..............22222222222222222222
-..2.......2.....2........2..............2..................2
-..222222222.....2........2.................................2
+..2.......2..............2..............2..................2
+..222222222..............2.................................2
 ..2222....2..............2.................................2
-..2222...................2..............22222222222222222222
+..2222..........2........2..............22222222222222222222
+..2.............2........2..............2..................2
 ..2.............2........2..............2..................2
 ..2.......2.....2........2..............2..................2
-..2.......2.....2222.....2..............2..................2
-..2.......2.....2........2.................................2
+..2.......2.....22.......2.................................2
 ..2.......22...22........2.................................2
-..2.......2.....2........2..............2..................2
-..2.......2.....2........2..............22222222222222222222
-..222222222.....2222222222..............2..................2
+..222222222.....2........2..............2..................2
+................2......2.2..............22222222222222222222
+................2222222222..............2..................2
 .........................2..............2..................2
 222222222222...22222222222..............2..................2
 ...........................................................2
@@ -346,7 +388,7 @@ namespace myTiles {
 ...........................................................2
 ...........................................................2
 ........................................22222222222222222222
-`, [myTiles.transparency16,sprites.castle.tileGrass1,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile11,myTiles.tile14,myTiles.tile15,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile22,myTiles.tile25,myTiles.tile19,myTiles.tile23,myTiles.tile24,myTiles.tile27,myTiles.tile35,myTiles.tile36,myTiles.tile37,myTiles.tile34,myTiles.tile38,myTiles.tile39,myTiles.tile41,myTiles.tile42,myTiles.tile43,myTiles.tile44,myTiles.tile45,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile52,myTiles.tile53,myTiles.tile51,myTiles.tile54,myTiles.tile55,myTiles.tile56,myTiles.tile57,myTiles.tile58,myTiles.tile59,myTiles.tile63,myTiles.tile64,myTiles.tile12,myTiles.tile60,myTiles.tile61,myTiles.tile30,myTiles.tile74,myTiles.tile129,myTiles.tile130,myTiles.tile131,sprites.builtin.forestTiles5,sprites.builtin.forestTiles9,sprites.builtin.forestTiles13,sprites.builtin.forestTiles6,sprites.builtin.forestTiles10,sprites.builtin.forestTiles7,sprites.builtin.forestTiles11,sprites.builtin.forestTiles15,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.castle.tilePath5,myTiles.tile132,myTiles.tile134,myTiles.tile135,myTiles.tile136,myTiles.tile137,myTiles.tile138,myTiles.tile139,myTiles.tile140,myTiles.tile141,myTiles.tile143,myTiles.tile144,myTiles.tile145], TileScale.Sixteen);
+`, [myTiles.transparency16,sprites.castle.tileGrass1,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile11,myTiles.tile14,myTiles.tile15,myTiles.tile16,myTiles.tile17,myTiles.tile18,myTiles.tile20,myTiles.tile21,myTiles.tile22,myTiles.tile25,myTiles.tile19,myTiles.tile23,myTiles.tile24,myTiles.tile27,myTiles.tile35,myTiles.tile36,myTiles.tile34,myTiles.tile38,myTiles.tile39,myTiles.tile41,myTiles.tile42,myTiles.tile43,myTiles.tile44,myTiles.tile45,myTiles.tile46,myTiles.tile47,myTiles.tile48,myTiles.tile52,myTiles.tile53,myTiles.tile54,myTiles.tile58,myTiles.tile59,myTiles.tile63,myTiles.tile64,myTiles.tile12,myTiles.tile60,myTiles.tile61,myTiles.tile30,myTiles.tile74,myTiles.tile129,myTiles.tile130,myTiles.tile131,sprites.builtin.forestTiles5,sprites.builtin.forestTiles9,sprites.builtin.forestTiles13,sprites.builtin.forestTiles6,sprites.builtin.forestTiles10,sprites.builtin.forestTiles7,sprites.builtin.forestTiles11,sprites.builtin.forestTiles15,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.castle.tilePath5,myTiles.tile132,myTiles.tile134,myTiles.tile135,myTiles.tile136,myTiles.tile137,myTiles.tile138,myTiles.tile139,myTiles.tile140,myTiles.tile141,myTiles.tile143,myTiles.tile144,myTiles.tile145,myTiles.tile155,myTiles.tile161,myTiles.tile160,myTiles.tile159,myTiles.tile164], TileScale.Sixteen);
         }
         return null;
     })
@@ -386,8 +428,6 @@ namespace myTiles {
             case "tile35":return tile35;
             case "emhætte":
             case "tile36":return tile36;
-            case "ovn":
-            case "tile37":return tile37;
             case "sengelampe slukket":
             case "tile22":return tile22;
             case "sengelampe":
@@ -404,10 +444,6 @@ namespace myTiles {
             case "tile18":return tile18;
             case "seng 6":
             case "tile20":return tile20;
-            case "vaskemaskine":
-            case "tile26":return tile26;
-            case "tørretumbler":
-            case "tile28":return tile28;
             case "Underskab":
             case "tile34":return tile34;
             case "lille overskab":
@@ -428,8 +464,6 @@ namespace myTiles {
             case "tile60":return tile60;
             case "dør 2":
             case "tile61":return tile61;
-            case "føntørrer":
-            case "tile43":return tile43;
             case "toilet 1":
             case "tile19":return tile19;
             case "toilet 2":
@@ -444,8 +478,6 @@ namespace myTiles {
             case "tile41":return tile41;
             case "Green":
             case "tile29":return tile29;
-            case "vaskemaskine0":
-            case "tile30":return tile30;
             case "vaskemaskine1":
             case "tile31":return tile31;
             case "Num1":
@@ -468,8 +500,6 @@ namespace myTiles {
             case "tile69":return tile69;
             case "myTile13":
             case "tile73":return tile73;
-            case "tørretumbler0":
-            case "tile74":return tile74;
             case "tørretumbler1":
             case "tile75":return tile75;
             case "StopBtn":
@@ -570,8 +600,6 @@ namespace myTiles {
             case "tile65":return tile65;
             case "myTile15":
             case "tile123":return tile123;
-            case "Grass":
-            case "tile124":return tile124;
             case "StopBtnActive":
             case "tile126":return tile126;
             case "StartBtnActive":
@@ -583,62 +611,118 @@ namespace myTiles {
             case "tile129":return tile129;
             case "tile130":return tile130;
             case "tile131":return tile131;
-            case "UdendørsLampe":
-            case "tile132":return tile132;
             case "myTile17":
             case "tile134":return tile134;
             case "myTile19":
             case "tile136":return tile136;
-            case "myTile21":
-            case "tile138":return tile138;
-            case "myTile22":
-            case "tile139":return tile139;
-            case "myTile23":
-            case "tile140":return tile140;
-            case "myTile18":
-            case "tile135":return tile135;
-            case "myTile20":
-            case "tile137":return tile137;
-            case "myTile24":
-            case "tile141":return tile141;
-            case "Sofa 0":
-            case "tile52":return tile52;
-            case "Sofa 2":
-            case "tile50":return tile50;
-            case "Sofa 4":
-            case "tile53":return tile53;
-            case "TV 6":
-            case "tile51":return tile51;
-            case "TV 2":
-            case "tile55":return tile55;
-            case "TV 4":
-            case "tile56":return tile56;
-            case "TV 5":
-            case "tile57":return tile57;
-            case "TV 0":
-            case "tile58":return tile58;
-            case "TV 1":
-            case "tile62":return tile62;
-            case "TV 3":
-            case "tile54":return tile54;
-            case "Sofa 3":
-            case "tile143":return tile143;
-            case "Sofa 5":
-            case "tile144":return tile144;
-            case "Sofa 6":
-            case "tile145":return tile145;
-            case "tv møbel 2 spille konsol":
-            case "tile64":return tile64;
-            case "TV møbel 3 spille konsol":
-            case "tile63":return tile63;
-            case "tv møbel 1 controller":
-            case "tile59":return tile59;
             case "CO2":
             case "tile121":return tile121;
             case "Money":
             case "tile122":return tile122;
             case "Ur":
             case "tile142":return tile142;
+            case "FenceRightBCorner":
+            case "tile139":return tile139;
+            case "FenceRightTCorner":
+            case "tile138":return tile138;
+            case "FenceTopLCorner":
+            case "tile140":return tile140;
+            case "FenceSraightDown":
+            case "tile137":return tile137;
+            case "FenceStraightVandret":
+            case "tile135":return tile135;
+            case "FenceStraightDownShort":
+            case "tile141":return tile141;
+            case "FenceCornerRightTCorner":
+            case "tile133":return tile133;
+            case "FenceRightBCorner0":
+            case "tile146":return tile146;
+            case "FenceTopLCorner0":
+            case "tile147":return tile147;
+            case "FenceStraightVandret0":
+            case "tile148":return tile148;
+            case "FenceSraightDown0":
+            case "tile149":return tile149;
+            case "FenceStraightDownShort0":
+            case "tile150":return tile150;
+            case "UdendørsLampe":
+            case "tile132":return tile132;
+            case "PinkGrass":
+            case "tile124":return tile124;
+            case "UdendørsLampe0":
+            case "tile151":return tile151;
+            case "Sofa 0":
+            case "tile52":return tile52;
+            case "Sofa 2":
+            case "tile50":return tile50;
+            case "Sofa 4":
+            case "tile53":return tile53;
+            case "Sofa 5":
+            case "tile144":return tile144;
+            case "Sofa 6":
+            case "tile145":return tile145;
+            case "Sofa 3":
+            case "tile143":return tile143;
+            case "TV 5":
+            case "tile57":return tile57;
+            case "TV 0":
+            case "tile58":return tile58;
+            case "TV 1":
+            case "tile62":return tile62;
+            case "tv møbel 2 spille konsol":
+            case "tile64":return tile64;
+            case "TV møbel 3 spille konsol":
+            case "tile63":return tile63;
+            case "tv møbel 1 controller":
+            case "tile59":return tile59;
+            case "vaskemaskineTændt":
+            case "tile30":return tile30;
+            case "tørretumblerTændt":
+            case "tile74":return tile74;
+            case "tørretumblerSlukket":
+            case "tile153":return tile153;
+            case "vaskemaskineSlukket":
+            case "tile152":return tile152;
+            case "føntørrerTændt":
+            case "tile43":return tile43;
+            case "føntørrerSlukket":
+            case "tile154":return tile154;
+            case "TV 6":
+            case "tile51":return tile51;
+            case "TV 2":
+            case "tile55":return tile55;
+            case "TV 3":
+            case "tile54":return tile54;
+            case "TV 8":
+            case "tile156":return tile156;
+            case "TV 10":
+            case "tile158":return tile158;
+            case "TV 4":
+            case "tile56":return tile56;
+            case "TV 7":
+            case "tile155":return tile155;
+            case "TV 11":
+            case "tile159":return tile159;
+            case "TV 12":
+            case "tile160":return tile160;
+            case "TV 13":
+            case "tile161":return tile161;
+            case "vaskemaskineMid":
+            case "tile26":return tile26;
+            case "tørretumblerMid":
+            case "tile28":return tile28;
+            case "ovnMidTændt":
+            case "tile163":return tile163;
+            case "ovnNyTændt":
+            case "tile162":return tile162;
+            case "ovnGammelTændt":
+            case "tile157":return tile157;
+            case "ovnMidSlukket":
+            case "tile37":return tile37;
+            case "ovnGammelSlukket":
+            case "tile164":return tile164;
+            case "ovnNySlukket":
+            case "tile165":return tile165;
         }
         return null;
     })
